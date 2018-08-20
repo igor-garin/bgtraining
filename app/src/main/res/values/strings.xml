@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Бредогенератор</string>
+    <string name="about">О приложении</string>
+    <string name="rules">Описание</string>
+    <string name="reset">Сбросить данные</string>
+    <string name="lingvisticheskie_piramidy">Лингвистические пирамиды</string>
+    <string name="chem_voron_pokhozh_na_stol_1">Чем ворон похож на стол</string>
+    <string name="chem_voron_pokhozh_na_stol_2">Чем ворон похож на стол. Второй вариант.</string>
+    <string name="prodvinutoe_svyazyvanie">Продвинутое связывание</string>
+    <string name="o_chem_vizhu_o_tom_i_poyu">О чем вижу, о том и пою</string>
+    <string name="oranzhevoe_nastroenie">Оранжевое настроение</string>
+    <string name="alternativnoe_opisanie_deystvitelnosti">Альтернативное описание действительности</string>
+    <string name="drugie_varianty_sokrashcheniy">Другие варианты сокращений</string>
+    <string name="reshenie_problem">Решение проблемы</string>
+    <string name="side_desk">Аналогия</string>
+    <string name="down_desk">Разобобщения</string>
+    <string name="up_desk">Обобщение</string>
+    <string name="next_word">Следующее слово</string>
+    <string name="next_pair">Следующая пара</string>
+    <string name="next_problem">Следующая проблема</string>
+    <string name="words_info">Количество слов в безе данных по типу: %1$s.</string>
+    <string name="v_noun">"неживой предмет(%1$s), "</string>
+    <string name="v_animal">"живое создание(%1$s), "</string>
+    <string name="emotion">"эмоция(%1$s), "</string>
+    <string name="process">"процесс(%1$s), "</string>
+    <string name="abbreviation">"аббревиатура(%1$s), "</string>
+    <string name="problem">проблема(%1$s)</string>
+    <string name="visit_website">Открыть сайт</string>
+    <string name="data_preparing">Подготовка базы данных</string>
+    <string name="data_error">Ошибка данных</string>
+    <string name="item_go">Старт</string>
+    <string name="item_stat">Статистика</string>
+    <string name="item_reminder">Напоминания</string>
+    <string name="stat_title_1">Затрачено времени (в минутах), всего %1$s минут</string>
+    <string name="stat_title_2">Затрачено времени (в минутах), всего %1$s минута</string>
+    <string name="stat_title_3">Затрачено времени (в минутах), всего %1$s минуты</string>
+    <string name="day">День</string>
+    <string name="day1">Понедельник</string>
+    <string name="day2">Вторник</string>
+    <string name="day3">Среда</string>
+    <string name="day4">Четверг</string>
+    <string name="day5">Пятница</string>
+    <string name="day6">Суббота</string>
+    <string name="day7">Воскресенье</string>
+    <string name="no_data">Нет данных</string>
+
+</resources>
