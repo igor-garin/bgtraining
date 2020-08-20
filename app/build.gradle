@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+def fabricKey = ""
+def alias = ""
+def aliasPass = ""
+
+android {
+    if (gradle.hasProperty("fabricKey")) {
+        fabricKey = gradle.getProperty("fabricKey")
+    }
+    if (gradle.hasProperty("alias")) {
+        alias = gradle.getProperty("alias")
+    }
+    if (gradle.hasProperty("aliasPass")) {
+        aliasPass = gradle.getProperty("aliasPass")
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "ru.igarin.bgtraining"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 22000
+        versionName "2.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [FABRIC_API_KEY: fabricKey]
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../../release-key.keystore")
+            storePassword aliasPass
+            keyAlias alias
+            keyPassword aliasPass
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.j256.ormlite:ormlite-android:4.46'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:answers:1.3.10@aar') {
+        transitive = true;
+    }
+
+    compile 'com.google.guava:guava:20.0'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile 'junit:junit:4.12'
+}
