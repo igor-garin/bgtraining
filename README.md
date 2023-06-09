@@ -5,7 +5,7 @@ The application is a mobile version of the site http://bgTraining.ru
 
 ## Description
 The app will help you train your delusion generator. The description of the exercises is taken from Philip Bogachev's book "Pickup. Seduction Tutorial (RMES 2.0)"
-This project is written in Java and uses the Gradle build system. It provides a comprehensive solution for background training tasks on Android devices.
+This project is written in Java and uses the Gradle build system.
 
 ## Installation
 To install BGTraining, clone the repository and import the project into Android Studio:
